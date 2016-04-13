@@ -1,0 +1,175 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="win32">
+      <UniqueIdentifier>{84a8ebd7-7cf0-47f6-b75e-d441df67da40}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="resource">
+      <UniqueIdentifier>{715254bc-d70b-4ec5-bf29-467dd3ace079}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{bb6c862e-70e9-49d9-81b7-3829a6f50471}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\final">
+      <UniqueIdentifier>{a0678518-2cb9-4144-9817-1455a1b5ae9d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\AppDelegate.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Final\CRunner.cpp">
+      <Filter>src\final</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\AnimationAction.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Final\C3SButton.cpp">
+      <Filter>src\final</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Final\CEnemy.cpp">
+      <Filter>src\final</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="main.h">
+      <Filter>win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\AppDelegate.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Final\CRunner.h">
+      <Filter>src\final</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\AnimationAction.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Final\C3SButton.h">
+      <Filter>src\final</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Final\CEnemy.h">
+      <Filter>src\final</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="game.rc">
+      <Filter>resource</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Resources\res\AnimationAction.csb">
+      <Filter>resource</Filter>
+    </None>
+    <None Include="..\Resources\res\MainScene.csb">
+      <Filter>resource</Filter>
+    </None>
+    <None Include="..\Resources\res\runner.csb">
+      <Filter>resource</Filter>
+    </None>
+    <None Include="..\Resources\res\scene101.plist">
+      <Filter>resource</Filter>
+    </None>
+    <None Include="..\Resources\res\scene101bg.plist">
+      <Filter>resource</Filter>
+    </None>
+    <None Include="..\Resources\res\UKgood.fnt">
+      <Filter>resource</Filter>
+    </None>
+    <None Include="..\Resources\res\Node.csb">
+      <Filter>resource</Filter>
+    </None>
+    <None Include="..\Resources\res\cuberanim.plist">
+      <Filter>resource</Filter>
+    </None>
+    <None Include="..\Resources\res\Node1.csb">
+      <Filter>resource</Filter>
+    </None>
+    <None Include="..\Resources\res\Node2.csb">
+      <Filter>resource</Filter>
+    </None>
+    <None Include="..\Resources\res\runner01.csb">
+      <Filter>resource</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\Resources\res\HelloWorld.png">
+      <Filter>resource</Filter>
+    </Image>
+    <Image Include="..\Resources\res\scene101.png">
+      <Filter>resource</Filter>
+    </Image>
+    <Image Include="..\Resources\res\scene101bg.png">
+      <Filter>resource</Filter>
+    </Image>
+    <Image Include="..\Resources\res\UKgood_0.png">
+      <Filter>resource</Filter>
+    </Image>
+    <Image Include="..\Resources\res\exitbtn01.png">
+      <Filter>resource</Filter>
+    </Image>
+    <Image Include="..\Resources\res\exitbtn02.png">
+      <Filter>resource</Filter>
+    </Image>
+    <Image Include="..\Resources\res\exitbtn03.png">
+      <Filter>resource</Filter>
+    </Image>
+    <Image Include="..\Resources\res\flame1_08.png">
+      <Filter>resource</Filter>
+    </Image>
+    <Image Include="..\Resources\res\jumpbtn01.png">
+      <Filter>resource</Filter>
+    </Image>
+    <Image Include="..\Resources\res\jumpbtn02.png">
+      <Filter>resource</Filter>
+    </Image>
+    <Image Include="..\Resources\res\jumpbtn03.png">
+      <Filter>resource</Filter>
+    </Image>
+    <Image Include="..\Resources\res\num_three.png">
+      <Filter>resource</Filter>
+    </Image>
+    <Image Include="..\Resources\res\replaybtn01.png">
+      <Filter>resource</Filter>
+    </Image>
+    <Image Include="..\Resources\res\replaybtn02.png">
+      <Filter>resource</Filter>
+    </Image>
+    <Image Include="..\Resources\res\replaybtn03.png">
+      <Filter>resource</Filter>
+    </Image>
+    <Image Include="..\Resources\res\startbtn01.png">
+      <Filter>resource</Filter>
+    </Image>
+    <Image Include="..\Resources\res\startbtn02.png">
+      <Filter>resource</Filter>
+    </Image>
+    <Image Include="..\Resources\res\startbtn03.png">
+      <Filter>resource</Filter>
+    </Image>
+    <Image Include="..\Resources\res\triblock02.png">
+      <Filter>resource</Filter>
+    </Image>
+    <Image Include="..\Resources\res\triblock03.png">
+      <Filter>resource</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="..\Resources\res\SR_bg.mp3">
+      <Filter>resource</Filter>
+    </Media>
+    <Media Include="..\Resources\res\thinking cloud.mp3">
+      <Filter>resource</Filter>
+    </Media>
+  </ItemGroup>
+  <ItemGroup>
+    <Font Include="..\Resources\res\HKYuanMini.ttf">
+      <Filter>resource</Filter>
+    </Font>
+    <Font Include="..\Resources\res\Marker Felt.ttf">
+      <Filter>resource</Filter>
+    </Font>
+  </ItemGroup>
+</Project>

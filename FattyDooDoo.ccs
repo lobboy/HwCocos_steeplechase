@@ -1,0 +1,126 @@
+<Solution>
+  <PropertyGroup Name="FattyDooDoo" Version="3.10.0.0" Type="CocosStudio" />
+  <SolutionFolder>
+    <Group ctype="ResourceGroup">
+      <RootFolder Name=".">
+        <PlistImageFolder Image="scene101.png" PListFile="scene101.plist" Name=".scene101_PList.Dir">
+          <PlistImageFile Name="bean1_01.png" Key="bean1_01.png" />
+          <PlistImageFile Name="bean1_02.png" Key="bean1_02.png" />
+          <PlistImageFile Name="bean1_03.png" Key="bean1_03.png" />
+          <PlistImageFile Name="bean1_04.png" Key="bean1_04.png" />
+          <PlistImageFile Name="bean1_05.png" Key="bean1_05.png" />
+          <PlistImageFile Name="bean1_jump01.png" Key="bean1_jump01.png" />
+          <PlistImageFile Name="bean1_jump02.png" Key="bean1_jump02.png" />
+          <PlistImageFile Name="bean1_jump03.png" Key="bean1_jump03.png" />
+          <PlistImageFile Name="bean1_jump04.png" Key="bean1_jump04.png" />
+          <PlistImageFile Name="bean1_wave01.png" Key="bean1_wave01.png" />
+          <PlistImageFile Name="bean1_wave02.png" Key="bean1_wave02.png" />
+          <PlistImageFile Name="bean1_wave03.png" Key="bean1_wave03.png" />
+          <PlistImageFile Name="bean2_01.png" Key="bean2_01.png" />
+          <PlistImageFile Name="bean2_02.png" Key="bean2_02.png" />
+          <PlistImageFile Name="bean2_03.png" Key="bean2_03.png" />
+          <PlistImageFile Name="bean2_04.png" Key="bean2_04.png" />
+          <PlistImageFile Name="bean2_05.png" Key="bean2_05.png" />
+          <PlistImageFile Name="ceyes1.png" Key="ceyes1.png" />
+          <PlistImageFile Name="ceyes2.png" Key="ceyes2.png" />
+          <PlistImageFile Name="ceyes3.png" Key="ceyes3.png" />
+          <PlistImageFile Name="checkbox.png" Key="checkbox.png" />
+          <PlistImageFile Name="checkboxon.png" Key="checkboxon.png" />
+          <PlistImageFile Name="checkoff.png" Key="checkoff.png" />
+          <PlistImageFile Name="checkon.png" Key="checkon.png" />
+          <PlistImageFile Name="cmouth1.png" Key="cmouth1.png" />
+          <PlistImageFile Name="cmouth2.png" Key="cmouth2.png" />
+          <PlistImageFile Name="cuber01.png" Key="cuber01.png" />
+          <PlistImageFile Name="cuber02.png" Key="cuber02.png" />
+          <PlistImageFile Name="cuber03.png" Key="cuber03.png" />
+          <PlistImageFile Name="cuber04.png" Key="cuber04.png" />
+          <PlistImageFile Name="cuber05.png" Key="cuber05.png" />
+          <PlistImageFile Name="cuber06.png" Key="cuber06.png" />
+          <PlistImageFile Name="cuber07.png" Key="cuber07.png" />
+          <PlistImageFile Name="cuber08.png" Key="cuber08.png" />
+          <PlistImageFile Name="cubershadow.png" Key="cubershadow.png" />
+          <PlistImageFile Name="flame1_01.png" Key="flame1_01.png" />
+          <PlistImageFile Name="flame1_02.png" Key="flame1_02.png" />
+          <PlistImageFile Name="flame1_03.png" Key="flame1_03.png" />
+          <PlistImageFile Name="flame1_04.png" Key="flame1_04.png" />
+          <PlistImageFile Name="flame1_05.png" Key="flame1_05.png" />
+          <PlistImageFile Name="flame1_06.png" Key="flame1_06.png" />
+          <PlistImageFile Name="flame1_07.png" Key="flame1_07.png" />
+          <PlistImageFile Name="flame2_01.png" Key="flame2_01.png" />
+          <PlistImageFile Name="flame2_02.png" Key="flame2_02.png" />
+          <PlistImageFile Name="flame2_03.png" Key="flame2_03.png" />
+          <PlistImageFile Name="flame2_04.png" Key="flame2_04.png" />
+          <PlistImageFile Name="flame2_05.png" Key="flame2_05.png" />
+          <PlistImageFile Name="flame2_06.png" Key="flame2_06.png" />
+          <PlistImageFile Name="flame2_07.png" Key="flame2_07.png" />
+          <PlistImageFile Name="flame2_08.png" Key="flame2_08.png" />
+          <PlistImageFile Name="flame2_09.png" Key="flame2_09.png" />
+          <PlistImageFile Name="flame2_10.png" Key="flame2_10.png" />
+          <PlistImageFile Name="flame2_11.png" Key="flame2_11.png" />
+          <PlistImageFile Name="flame2_12.png" Key="flame2_12.png" />
+          <PlistImageFile Name="flame2_13.png" Key="flame2_13.png" />
+          <PlistImageFile Name="loadingbar.png" Key="loadingbar.png" />
+          <PlistImageFile Name="sliderballnormal.png" Key="sliderballnormal.png" />
+          <PlistImageFile Name="sliderballpressed.png" Key="sliderballpressed.png" />
+          <PlistImageFile Name="sliderProgress.png" Key="sliderProgress.png" />
+          <PlistImageFile Name="sliderTrack.png" Key="sliderTrack.png" />
+          <PlistImageFile Name="triblock.png" Key="triblock.png" />
+          <PlistImageFile Name="triouter.png" Key="triouter.png" />
+          <PlistImageFile Name="trishadow.png" Key="trishadow.png" />
+        </PlistImageFolder>
+        <PlistImageFolder Image="scene101bg.png" PListFile="scene101bg.plist" Name=".scene101bg_PList.Dir">
+          <PlistImageFile Name="bg.png" Key="bg.png" />
+          <PlistImageFile Name="cuberbtn1.png" Key="cuberbtn1.png" />
+          <PlistImageFile Name="cuberbtn2.png" Key="cuberbtn2.png" />
+          <PlistImageFile Name="cuberbtn3.png" Key="cuberbtn3.png" />
+          <PlistImageFile Name="replaybtn.png" Key="replaybtn.png" />
+          <PlistImageFile Name="returnbtn.png" Key="returnbtn.png" />
+          <PlistImageFile Name="s101bgimg.png" Key="s101bgimg.png" />
+          <PlistImageFile Name="s101line01.png" Key="s101line01.png" />
+          <PlistImageFile Name="s101line02.png" Key="s101line02.png" />
+          <PlistImageFile Name="sr_line1.png" Key="sr_line1.png" />
+          <PlistImageFile Name="sr_line2.png" Key="sr_line2.png" />
+        </PlistImageFolder>
+        <File Name="AnimationAction.csb" />
+        <Project Name="AnimationAction.csd" Type="Scene" />
+        <Audio Name="arrivalsfinalsound.mp3" />
+        <Fnt Name="couriernew32.fnt" />
+        <File Name="cuberanim.plist" />
+        <Image Name="exitbtn01.png" />
+        <Image Name="exitbtn02.png" />
+        <Image Name="exitbtn03.png" />
+        <Image Name="flame1_08.png" />
+        <Image Name="flame2_14.png" />
+        <Audio Name="gain point.mp3" />
+        <Fnt Name="hansans48.fnt" />
+        <Image Name="HelloWorld.png" />
+        <TTF Name="HKYuanMini.ttf" />
+        <Image Name="jumpbtn01.png" />
+        <Image Name="jumpbtn02.png" />
+        <Image Name="jumpbtn03.png" />
+        <Project Name="MainScene.csd" Type="Scene" />
+        <TTF Name="Marker Felt.ttf" />
+        <Project Name="Node.csd" Type="Node" />
+        <Project Name="Node1.csd" Type="Node" />
+        <Project Name="Node2.csd" Type="Node" />
+        <Image Name="num_one.png" />
+        <Image Name="num_three.png" />
+        <Image Name="num_two.png" />
+        <Image Name="replaybtn01.png" />
+        <Image Name="replaybtn02.png" />
+        <Image Name="replaybtn03.png" />
+        <Project Name="runner.csd" Type="Node" />
+        <Project Name="runner01.csd" Type="Node" />
+        <Audio Name="running.mp3" />
+        <Audio Name="SR_bg.mp3" />
+        <Image Name="startbtn01.png" />
+        <Image Name="startbtn02.png" />
+        <Image Name="startbtn03.png" />
+        <Audio Name="thinking cloud.mp3" />
+        <Image Name="triblock02.png" />
+        <Image Name="triblock03.png" />
+        <Fnt Name="UKgood.fnt" />
+      </RootFolder>
+    </Group>
+  </SolutionFolder>
+</Solution>
