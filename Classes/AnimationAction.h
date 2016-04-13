@@ -13,43 +13,37 @@
 class AnimationAction : public cocos2d::Layer
 {
 private:
-	cocos2d::Sequence *_mySequence;
-	cocos2d::Action   *_myAction; 
-
 	cocos2d::JumpBy *_jumpAction;
 	// For Double Jump
 	cocos2d::Spawn   *_myJump2;
 	int _NoJumps;
 	cocos2d::CallFunc *_mycallback;
 	cocos2d::Point _runnerPt;
-
 	//UI
 	cocos2d::ui::Text *_hpBarValue;
 	cocos2d::ui::Text *_scoreValue;
 	cocos2d::ui::LoadingBar *_hpBar;
-	//cocos2d::Sprite *_countdown[3];
-
-
+	cocos2d::Sprite *_countdown[3];
 	//Enemy
 	CEnemy _enemy[3];
-	//cocos2d::Sprite *_enemy1;
-	cocos2d::Sprite *_enemy2;
-	cocos2d::Sprite *_enemy3;
 	cocos2d::MoveTo *_enemyAction;
 	float _spawntimer;
 	int _enemytype;
 	cocostudio::timeline::ActionTimeline *_action;
-
+	//Runner
 	CRunner _runnerRuan;
 	float _changefacetimer;
 	float _score;
+	cocos2d::Sequence *_gethurtSequence;
+	cocos2d::Sequence *_getscoreSequence;
 
 	C3SButton _replaybtn;
 	C3SButton _exitbtn;
 	C3SButton _jumpbtn;
-
 	C3SButton _startbtn;
-	bool isstart;
+	bool _isstart;
+	int i_countdown;
+	cocos2d::Sequence *_countdownSequence;
 
 public:
 	~AnimationAction();

@@ -14,7 +14,8 @@ LOCAL_SRC_FILES := hellocpp/main.cpp \
                    ../../Classes/AppDelegate.cpp \
                    ../../Classes/AnimationAction.cpp \
                    ../../Classes/Final/CRunner.cpp \
-                   ../../Classes/Final/C3SButton.cpp
+                   ../../Classes/Final/C3SButton.cpp \
+				   ../../Classes/Final/CEnemy.cpp
 
 LOCAL_C_INCLUDES := $(LOCAL_PATH)/../../Classes
 

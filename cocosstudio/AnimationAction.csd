@@ -177,7 +177,7 @@
             <CColor A="255" R="255" G="255" B="255" />
             <PrePosition X="0.8721" Y="0.8264" />
             <PreSize X="0.1023" Y="0.2819" />
-            <FileData Type="PlistSubImage" Path="bean1_05.png" Plist="scene101.plist" />
+            <FileData Type="PlistSubImage" Path="bean1_01.png" Plist="scene101.plist" />
             <BlendFunc Src="1" Dst="771" />
           </AbstractNodeData>
           <AbstractNodeData Name="Sprite_6_0" ActionTag="61461870" Tag="43" IconVisible="False" LeftMargin="949.1731" RightMargin="199.8269" TopMargin="23.5000" BottomMargin="493.5000" ctype="SpriteObjectData">
@@ -188,7 +188,7 @@
             <CColor A="255" R="255" G="255" B="255" />
             <PrePosition X="0.7927" Y="0.8264" />
             <PreSize X="0.1023" Y="0.2819" />
-            <FileData Type="PlistSubImage" Path="bean1_05.png" Plist="scene101.plist" />
+            <FileData Type="PlistSubImage" Path="bean1_01.png" Plist="scene101.plist" />
             <BlendFunc Src="1" Dst="771" />
           </AbstractNodeData>
           <AbstractNodeData Name="Sprite_6_1" ActionTag="2041961845" Tag="44" IconVisible="False" LeftMargin="845.4215" RightMargin="303.5785" TopMargin="23.5001" BottomMargin="493.4999" ctype="SpriteObjectData">
@@ -199,7 +199,7 @@
             <CColor A="255" R="255" G="255" B="255" />
             <PrePosition X="0.7117" Y="0.8264" />
             <PreSize X="0.1023" Y="0.2819" />
-            <FileData Type="PlistSubImage" Path="bean1_05.png" Plist="scene101.plist" />
+            <FileData Type="PlistSubImage" Path="bean1_01.png" Plist="scene101.plist" />
             <BlendFunc Src="1" Dst="771" />
           </AbstractNodeData>
           <AbstractNodeData Name="Sprite_6_2" ActionTag="-1943195418" Tag="45" IconVisible="False" LeftMargin="259.6878" RightMargin="889.3122" TopMargin="23.5000" BottomMargin="493.5000" ctype="SpriteObjectData">
@@ -210,7 +210,7 @@
             <CColor A="255" R="255" G="255" B="255" />
             <PrePosition X="0.2541" Y="0.8264" />
             <PreSize X="0.1023" Y="0.2819" />
-            <FileData Type="PlistSubImage" Path="bean1_05.png" Plist="scene101.plist" />
+            <FileData Type="PlistSubImage" Path="bean1_01.png" Plist="scene101.plist" />
             <BlendFunc Src="1" Dst="771" />
           </AbstractNodeData>
           <AbstractNodeData Name="Sprite_6_0_0" ActionTag="-1190122213" Tag="46" IconVisible="False" LeftMargin="158.0562" RightMargin="990.9438" TopMargin="23.5000" BottomMargin="493.5000" ctype="SpriteObjectData">
@@ -221,7 +221,7 @@
             <CColor A="255" R="255" G="255" B="255" />
             <PrePosition X="0.1747" Y="0.8264" />
             <PreSize X="0.1023" Y="0.2819" />
-            <FileData Type="PlistSubImage" Path="bean1_05.png" Plist="scene101.plist" />
+            <FileData Type="PlistSubImage" Path="bean1_01.png" Plist="scene101.plist" />
             <BlendFunc Src="1" Dst="771" />
           </AbstractNodeData>
           <AbstractNodeData Name="Sprite_6_1_0" ActionTag="37345600" Tag="47" IconVisible="False" LeftMargin="54.3051" RightMargin="1094.6949" TopMargin="23.5000" BottomMargin="493.5000" ctype="SpriteObjectData">
@@ -232,7 +232,7 @@
             <CColor A="255" R="255" G="255" B="255" />
             <PrePosition X="0.0936" Y="0.8264" />
             <PreSize X="0.1023" Y="0.2819" />
-            <FileData Type="PlistSubImage" Path="bean1_05.png" Plist="scene101.plist" />
+            <FileData Type="PlistSubImage" Path="bean1_01.png" Plist="scene101.plist" />
             <BlendFunc Src="1" Dst="771" />
           </AbstractNodeData>
           <AbstractNodeData Name="Text_score" ActionTag="-451639078" Tag="51" IconVisible="False" LeftMargin="194.0000" RightMargin="974.0000" TopMargin="593.6277" BottomMargin="86.3723" FontSize="20" LabelText="Score : 100&#xA;" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
@@ -268,39 +268,6 @@
             <PrePosition X="0.5000" Y="0.9444" />
             <PreSize X="0.1016" Y="0.0236" />
             <ImageFileData Type="PlistSubImage" Path="loadingbar.png" Plist="scene101.plist" />
-          </AbstractNodeData>
-          <AbstractNodeData Name="triblock_1" ActionTag="783102245" Tag="75" IconVisible="False" LeftMargin="-221.7820" RightMargin="1333.7820" TopMargin="348.0000" BottomMargin="228.0000" ctype="SpriteObjectData">
-            <Size X="168.0000" Y="144.0000" />
-            <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-            <Position X="-137.7820" Y="300.0000" />
-            <Scale ScaleX="1.0000" ScaleY="1.0000" />
-            <CColor A="255" R="255" G="255" B="255" />
-            <PrePosition X="-0.1076" Y="0.4167" />
-            <PreSize X="0.1312" Y="0.2000" />
-            <FileData Type="PlistSubImage" Path="triblock.png" Plist="scene101.plist" />
-            <BlendFunc Src="1" Dst="771" />
-          </AbstractNodeData>
-          <AbstractNodeData Name="triblock02_1" ActionTag="-1702391086" Tag="24" IconVisible="False" LeftMargin="-359.4522" RightMargin="1400.4521" TopMargin="324.0000" BottomMargin="204.0000" ctype="SpriteObjectData">
-            <Size X="239.0000" Y="192.0000" />
-            <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-            <Position X="-239.9522" Y="300.0000" />
-            <Scale ScaleX="1.0000" ScaleY="1.0000" />
-            <CColor A="255" R="255" G="255" B="255" />
-            <PrePosition X="-0.1875" Y="0.4167" />
-            <PreSize X="0.1867" Y="0.2667" />
-            <FileData Type="Normal" Path="triblock02.png" Plist="" />
-            <BlendFunc Src="1" Dst="771" />
-          </AbstractNodeData>
-          <AbstractNodeData Name="triblock03_2" ActionTag="1815322290" Tag="25" IconVisible="False" VerticalEdge="BottomEdge" LeftMargin="-594.1139" RightMargin="1552.1139" TopMargin="277.5500" BottomMargin="183.4500" ctype="SpriteObjectData">
-            <Size X="322.0000" Y="259.0000" />
-            <AnchorPoint ScaleX="0.5000" ScaleY="0.4500" />
-            <Position X="-433.1139" Y="300.0000" />
-            <Scale ScaleX="1.0000" ScaleY="1.0000" />
-            <CColor A="255" R="255" G="255" B="255" />
-            <PrePosition X="-0.3384" Y="0.4167" />
-            <PreSize X="0.2516" Y="0.3597" />
-            <FileData Type="Normal" Path="triblock03.png" Plist="" />
-            <BlendFunc Src="1" Dst="771" />
           </AbstractNodeData>
         </Children>
       </ObjectData>

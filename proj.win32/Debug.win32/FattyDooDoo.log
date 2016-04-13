@@ -4,7 +4,7 @@ c:\cocos\cocos2d-x\cocos2d-x-3.10\cocos\physics\ccphysicsbody.h : warning C4819:
 c:\cocos\cocos2d-x\cocos2d-x-3.10\cocos\physics\ccphysicsshape.h : warning C4819: 檔案含有無法在目前字碼頁 (950) 中表示的字元。請以 Unicode 格式儲存檔案以防止資料遺失
 c:\cocos\cocos2d-x\cocos2d-x-3.10\cocos\platform\ccsaxparser.h : warning C4819: 檔案含有無法在目前字碼頁 (950) 中表示的字元。請以 Unicode 格式儲存檔案以防止資料遺失
 c:\cocos\cocos2d-x\cocos2d-x-3.10\cocos\ui\uiscale9sprite.h : warning C4819: 檔案含有無法在目前字碼頁 (950) 中表示的字元。請以 Unicode 格式儲存檔案以防止資料遺失
-d:\github\fattydoodoo\classes\animationaction.cpp(225): warning C4996: 'cocos2d::CallFunc::create': 宣告為已被取代
+d:\github\fattydoodoo\classes\animationaction.cpp(214): warning C4996: 'cocos2d::CallFunc::create': 宣告為已被取代
   c:\cocos\cocos2d-x\cocos2d-x-3.10\cocos\2d\ccactioninstant.h(339): note: 請參閱 'cocos2d::CallFunc::create' 的宣告
   60 File(s) copied
   FattyDooDoo.vcxproj -> D:\GitHub\FattyDooDoo\proj.win32\Debug.win32\FattyDooDoo.exe

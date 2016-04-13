@@ -682,7 +682,7 @@
             <PrePosition />
             <PreSize X="0.0000" Y="0.0000" />
           </AbstractNodeData>
-          <AbstractNodeData Name="triRoot_3" ActionTag="-1304930534" Tag="56" IconVisible="True" ctype="SingleNodeObjectData">
+          <AbstractNodeData Name="triRoot_3" Visible="False" ActionTag="-1304930534" Tag="56" IconVisible="True" ctype="SingleNodeObjectData">
             <Size X="0.0000" Y="0.0000" />
             <Children>
               <AbstractNodeData Name="triblock_3" ActionTag="868447538" Tag="64" IconVisible="False" LeftMargin="-36.4262" RightMargin="-131.5738" TopMargin="-110.1675" BottomMargin="-33.8325" ctype="SpriteObjectData">

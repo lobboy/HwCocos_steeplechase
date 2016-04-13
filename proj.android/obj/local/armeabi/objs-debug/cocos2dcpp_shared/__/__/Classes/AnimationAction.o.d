@@ -463,7 +463,7 @@ obj/local/armeabi/objs-debug/cocos2dcpp_shared/__/__/Classes/AnimationAction.o: 
  C:/Cocos/Cocos2d-x/cocos2d-x-3.10/cocos/editor-support/cocostudio/prebuilt-mk/../../cocostudio/ActionTimeline/CSLoader.h \
  jni/../../Classes/Final/CRunner.h \
  C:/Cocos/Cocos2d-x/cocos2d-x-3.10/cocos/editor-support/cocostudio/prebuilt-mk/../../cocostudio\CocoStudio.h \
- jni/../../Classes/Final/C3SButton.h
+ jni/../../Classes/Final/C3SButton.h jni/../../Classes/Final/CEnemy.h
 
 jni/../../Classes/AnimationAction.h:
 
@@ -1392,3 +1392,5 @@ jni/../../Classes/Final/CRunner.h:
 C:/Cocos/Cocos2d-x/cocos2d-x-3.10/cocos/editor-support/cocostudio/prebuilt-mk/../../cocostudio\CocoStudio.h:
 
 jni/../../Classes/Final/C3SButton.h:
+
+jni/../../Classes/Final/CEnemy.h:

@@ -2,26 +2,9 @@
 
 USING_NS_CC;
 
-//
-// 建立角色之前，必須先確定已經讀入儲存角色所有動態圖片的 plist 檔
-//
 
 CRunner::CRunner(/*const char *csbname, cocos2d::Layer &parent*/)
 {
-	//// 讀取角色
-	//auto getNode = CSLoader::createNode(csbname);
-	//_runnerRoot = (cocos2d::Node*)getNode->getChildByName("Node_1");
-	//_runnerRoot->setPosition(0,0); // 預設放在 (0,0) 
-	//_body = (cocos2d::Sprite *)_runnerRoot->getChildByName("cuber01_1");
-	//_body->setColor(Color3B(255, 255, 255));
-	//_normalFace = (cocos2d::Node *)_runnerRoot->getChildByName("normalFace");
-	//_happyFace = (cocos2d::Node *)_runnerRoot->getChildByName("happyFace");
-	//_depressedFace = (cocos2d::Node *)_runnerRoot->getChildByName("fuckFace");
-	//_shadow = (cocos2d::Sprite *)_runnerRoot->getChildByName("cubershadow_8");
-	//_happyFace->setVisible(false);
-	//_depressedFace->setVisible(false);
-	//parent.addChild(_runnerRoot);
-	//_action = nullptr;
 }
 
 void CRunner::Init(const char * csbname, cocos2d::Layer & parent)
@@ -74,18 +57,6 @@ void CRunner::setAnimation(const char *plistFile)
 	_action = RepeatForever::create(Animate::create(animation));
 	_action->retain();
 }
-
-//void CRunner::setJumpAnim(const Action *jumpAction)
-//{
-//	//auto cache = AnimationCache::getInstance();
-//	//cache->addAnimationsWithFile(plistFile);
-//	//auto animation = cache->getAnimation("running");
-//	//_action = RepeatForever::create(Animate::create(animation));
-//
-//	//runner1->runAction(Repeat::create(Animate::create(animation), 1));// 播放一次
-//
-//	_jumpAction->retain();
-//}
 
 void CRunner::setFace(int type)
 {

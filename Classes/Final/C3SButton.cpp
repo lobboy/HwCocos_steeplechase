@@ -17,7 +17,6 @@ C3SButton::~C3SButton()
 
 void C3SButton::Init(const char * csbname, cocos2d::Layer & parent, const char *nodename, const char *name1, const char *name2, const char *name3)
 {
-	// 讀取角色
 	auto getNode = CSLoader::createNode(csbname);
 	_btnRoot = (cocos2d::Node*)getNode->getChildByName(nodename);
 	_btnRoot->setPosition(0, 0); // 預設放在 (0,0) 
