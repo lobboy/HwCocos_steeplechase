@@ -82,6 +82,13 @@ bool AnimationAction::init()
 // 音效與音樂 --------------------------------------------------------------------------------
 	SimpleAudioEngine::getInstance()->playBackgroundMusic("./SR_bg.mp3", true);
 
+	//SimpleAudioEngine::getInstance()->preloadEffect("./SoHurt.mp3");	// 預先載入音效檔
+	//SimpleAudioEngine::getInstance()->stopBackgroundMusic();	// 停止背景音樂
+	//eid_jump = SimpleAudioEngine::getInstance()->playEffect("thinking cloud.mp3");  // 播放音效檔
+	//eid_hurt = SimpleAudioEngine::getInstance()->playEffect("./SoHurt.mp3");  // 播放音效檔
+	//SimpleAudioEngine::getInstance()->stopEffect(eid);  // 停止音效撥放，必須使用 PlayEffect 傳回的 id
+	//SimpleAudioEngine::getInstance()->unloadEffect("./SoHurt.mp3");  // 釋放音效檔
+
 //---------------------------------------------------------------------------------------------
 
 //背景動畫--------------------------------------------------------------------------------------------------
@@ -308,6 +315,7 @@ void AnimationAction::doStep(float dt)
 						HP -= 20;
 						_runnerRuan.setFace(FACE_DEPRESSED);
 						_runnerRuan._runnerRoot->runAction(_gethurtSequence);
+						eid_hurt = SimpleAudioEngine::getInstance()->playEffect("./SoHurt.mp3");  // 播放音效檔
 					}
 					else
 					{
@@ -323,6 +331,7 @@ void AnimationAction::doStep(float dt)
 						HP -= 5;
 						_runnerRuan.setFace(FACE_DEPRESSED);
 						_runnerRuan._runnerRoot->runAction(_gethurtSequence);
+						eid_hurt = SimpleAudioEngine::getInstance()->playEffect("./SoHurt.mp3");  // 播放音效檔
 					}
 					else
 					{
@@ -338,6 +347,7 @@ void AnimationAction::doStep(float dt)
 						HP -= 10;
 						_runnerRuan.setFace(FACE_DEPRESSED);
 						_runnerRuan._runnerRoot->runAction(_gethurtSequence);
+						eid_hurt = SimpleAudioEngine::getInstance()->playEffect("./SoHurt.mp3");  // 播放音效檔
 					}
 					else
 					{
@@ -413,11 +423,13 @@ bool AnimationAction::onTouchBegan(cocos2d::Touch *pTouch, cocos2d::Event *pEven
 		if (_NoJumps == 0) {  // 第一次被按下
 			_runnerRuan._runnerRoot->runAction(Sequence::create(_jumpAction, _mycallback, NULL));
 			_NoJumps++;
+			eid_jump = SimpleAudioEngine::getInstance()->playEffect("thinking cloud.mp3");  // 播放音效檔
 		}
 		else if (_NoJumps == 1) {  // 第二次被按下
 			_NoJumps++;
 			_runnerRuan._runnerRoot->stopAllActions();
 			_runnerRuan._runnerRoot->runAction(Sequence::create(_myJump2, _mycallback, NULL));
+			eid_jump = SimpleAudioEngine::getInstance()->playEffect("thinking cloud.mp3");  // 播放音效檔
 		}
 	}
 	return true;

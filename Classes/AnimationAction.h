@@ -13,6 +13,8 @@
 class AnimationAction : public cocos2d::Layer
 {
 private:
+	unsigned int eid_hurt,eid_jump;
+
 	cocos2d::JumpBy *_jumpAction;
 	// For Double Jump
 	cocos2d::Spawn   *_myJump2;

@@ -112,6 +112,7 @@
         <Project Name="runner.csd" Type="Node" />
         <Project Name="runner01.csd" Type="Node" />
         <Audio Name="running.mp3" />
+        <Audio Name="SoHurt.mp3" />
         <Audio Name="SR_bg.mp3" />
         <Image Name="startbtn01.png" />
         <Image Name="startbtn02.png" />
