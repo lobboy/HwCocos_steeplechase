@@ -4,6 +4,7 @@
 #include "cocos2d.h"
 #include "cocostudio\CocoStudio.h"
 
+#define RUNNERCOLOR0 cocos2d::Color3B(255,255,255)
 #define RUNNERCOLOR1 cocos2d::Color3B(209,73,63)
 #define RUNNERCOLOR2 cocos2d::Color3B(200,209,63)
 #define RUNNERCOLOR3 cocos2d::Color3B(75,155,77)

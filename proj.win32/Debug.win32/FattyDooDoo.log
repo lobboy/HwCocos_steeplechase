@@ -1,15 +1,20 @@
 ﻿  AnimationAction.cpp
   AppDelegate.cpp
-c:\cocos\cocos2d-x\cocos2d-x-3.10\cocos\2d\ccparticlesystemquad.h : warning C4819: 檔案含有無法在目前字碼頁 (950) 中表示的字元。請以 Unicode 格式儲存檔案以防止資料遺失 (正在編譯原始程式檔 ..\Classes\AppDelegate.cpp)
+  CRunner.cpp
+c:\cocos\cocos2d-x\cocos2d-x-3.10\cocos\2d\ccparticlesystemquad.h : warning C4819: 檔案含有無法在目前字碼頁 (950) 中表示的字元。請以 Unicode 格式儲存檔案以防止資料遺失 (正在編譯原始程式檔 ..\Classes\Final\CRunner.cpp)
 c:\cocos\cocos2d-x\cocos2d-x-3.10\cocos\2d\ccparticlesystemquad.h : warning C4819: 檔案含有無法在目前字碼頁 (950) 中表示的字元。請以 Unicode 格式儲存檔案以防止資料遺失 (正在編譯原始程式檔 ..\Classes\AnimationAction.cpp)
-c:\cocos\cocos2d-x\cocos2d-x-3.10\cocos\physics\ccphysicsbody.h : warning C4819: 檔案含有無法在目前字碼頁 (950) 中表示的字元。請以 Unicode 格式儲存檔案以防止資料遺失 (正在編譯原始程式檔 ..\Classes\AppDelegate.cpp)
-c:\cocos\cocos2d-x\cocos2d-x-3.10\cocos\physics\ccphysicsshape.h : warning C4819: 檔案含有無法在目前字碼頁 (950) 中表示的字元。請以 Unicode 格式儲存檔案以防止資料遺失 (正在編譯原始程式檔 ..\Classes\AppDelegate.cpp)
+c:\cocos\cocos2d-x\cocos2d-x-3.10\cocos\2d\ccparticlesystemquad.h : warning C4819: 檔案含有無法在目前字碼頁 (950) 中表示的字元。請以 Unicode 格式儲存檔案以防止資料遺失 (正在編譯原始程式檔 ..\Classes\AppDelegate.cpp)
+c:\cocos\cocos2d-x\cocos2d-x-3.10\cocos\physics\ccphysicsbody.h : warning C4819: 檔案含有無法在目前字碼頁 (950) 中表示的字元。請以 Unicode 格式儲存檔案以防止資料遺失 (正在編譯原始程式檔 ..\Classes\Final\CRunner.cpp)
+c:\cocos\cocos2d-x\cocos2d-x-3.10\cocos\physics\ccphysicsshape.h : warning C4819: 檔案含有無法在目前字碼頁 (950) 中表示的字元。請以 Unicode 格式儲存檔案以防止資料遺失 (正在編譯原始程式檔 ..\Classes\Final\CRunner.cpp)
 c:\cocos\cocos2d-x\cocos2d-x-3.10\cocos\physics\ccphysicsbody.h : warning C4819: 檔案含有無法在目前字碼頁 (950) 中表示的字元。請以 Unicode 格式儲存檔案以防止資料遺失 (正在編譯原始程式檔 ..\Classes\AnimationAction.cpp)
 c:\cocos\cocos2d-x\cocos2d-x-3.10\cocos\physics\ccphysicsshape.h : warning C4819: 檔案含有無法在目前字碼頁 (950) 中表示的字元。請以 Unicode 格式儲存檔案以防止資料遺失 (正在編譯原始程式檔 ..\Classes\AnimationAction.cpp)
+c:\cocos\cocos2d-x\cocos2d-x-3.10\cocos\platform\ccsaxparser.h : warning C4819: 檔案含有無法在目前字碼頁 (950) 中表示的字元。請以 Unicode 格式儲存檔案以防止資料遺失 (正在編譯原始程式檔 ..\Classes\Final\CRunner.cpp)
+c:\cocos\cocos2d-x\cocos2d-x-3.10\cocos\physics\ccphysicsbody.h : warning C4819: 檔案含有無法在目前字碼頁 (950) 中表示的字元。請以 Unicode 格式儲存檔案以防止資料遺失 (正在編譯原始程式檔 ..\Classes\AppDelegate.cpp)
+c:\cocos\cocos2d-x\cocos2d-x-3.10\cocos\physics\ccphysicsshape.h : warning C4819: 檔案含有無法在目前字碼頁 (950) 中表示的字元。請以 Unicode 格式儲存檔案以防止資料遺失 (正在編譯原始程式檔 ..\Classes\AppDelegate.cpp)
 c:\cocos\cocos2d-x\cocos2d-x-3.10\cocos\platform\ccsaxparser.h : warning C4819: 檔案含有無法在目前字碼頁 (950) 中表示的字元。請以 Unicode 格式儲存檔案以防止資料遺失 (正在編譯原始程式檔 ..\Classes\AnimationAction.cpp)
 c:\cocos\cocos2d-x\cocos2d-x-3.10\cocos\platform\ccsaxparser.h : warning C4819: 檔案含有無法在目前字碼頁 (950) 中表示的字元。請以 Unicode 格式儲存檔案以防止資料遺失 (正在編譯原始程式檔 ..\Classes\AppDelegate.cpp)
-c:\cocos\cocos2d-x\cocos2d-x-3.10\cocos\ui\uiscale9sprite.h : warning C4819: 檔案含有無法在目前字碼頁 (950) 中表示的字元。請以 Unicode 格式儲存檔案以防止資料遺失 (正在編譯原始程式檔 ..\Classes\AppDelegate.cpp)
 c:\cocos\cocos2d-x\cocos2d-x-3.10\cocos\ui\uiscale9sprite.h : warning C4819: 檔案含有無法在目前字碼頁 (950) 中表示的字元。請以 Unicode 格式儲存檔案以防止資料遺失 (正在編譯原始程式檔 ..\Classes\AnimationAction.cpp)
+c:\cocos\cocos2d-x\cocos2d-x-3.10\cocos\ui\uiscale9sprite.h : warning C4819: 檔案含有無法在目前字碼頁 (950) 中表示的字元。請以 Unicode 格式儲存檔案以防止資料遺失 (正在編譯原始程式檔 ..\Classes\AppDelegate.cpp)
 d:\github\fattydoodoo\classes\animationaction.cpp(221): warning C4996: 'cocos2d::CallFunc::create': 宣告為已被取代
   c:\cocos\cocos2d-x\cocos2d-x-3.10\cocos\2d\ccactioninstant.h(339): note: 請參閱 'cocos2d::CallFunc::create' 的宣告
   60 File(s) copied

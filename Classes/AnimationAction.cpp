@@ -277,9 +277,11 @@ void AnimationAction::doStep(float dt)
 	{
 		float HP = _hpBar->getPercent();
 		_changefacetimer += dt;
-		if (_changefacetimer > 1.0f)
+		if (_changefacetimer > 1.0f)	
+		{
 			_runnerRuan.setFace(FACE_NORMAL);
-
+			_runnerRuan._runnerRoot->setColor(RUNNERCOLOR0);
+		}
 // Enemy³]©w -------------------------------------------------------------------------------------
 		_spawntimer += dt;
 		if (_spawntimer > 3)//spawn a enemy per 3 secconds
@@ -461,11 +463,14 @@ void  AnimationAction::onTouchEnded(cocos2d::Touch *pTouch, cocos2d::Event *pEve
 		_jumpbtn.setStatus(CLICKABLE_ON);
 		_startbtn.setStatus(CLICKABLE_OFF);
 
+		_runnerRuan._runnerRoot->setColor(RUNNERCOLOR0);
+
 		_hpBar->setPercent(100);
 		_hpBarValue->setString(StringUtils::format("HP = %5.2f", 100.0f));
 
 		_score = 0;
 		_scoreValue->setString(StringUtils::format("Score : %5.2f", 0.0f));
+
 	}
 
 	if (isexit)
