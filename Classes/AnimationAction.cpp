@@ -38,10 +38,13 @@ AnimationAction::~AnimationAction()
 	if (_countdown[0] != nullptr)_countdown[0]->release();
 	if (_countdown[1] != nullptr)_countdown[1]->release();
 	if (_countdown[2] != nullptr)_countdown[2]->release();
+	if (_countdown[3] != nullptr)_countdown[3]->release();
 	if (_gethurtSequence != nullptr)_gethurtSequence->release();
 	if (_getscoreSequence != nullptr)_getscoreSequence->release();
+	SimpleAudioEngine::getInstance()->stopBackgroundMusic();
+	SimpleAudioEngine::getInstance()->unloadEffect("thinking cloud.mp3");
+	SimpleAudioEngine::getInstance()->unloadEffect("oo_hno.mp3");
 	
-
 	AnimationCache::destroyInstance();  // 釋放 AnimationCache 取得的資源
 	SpriteFrameCache::getInstance()->removeUnusedSpriteFrames();
 	Director::getInstance()->getTextureCache()->removeUnusedTextures();
@@ -80,7 +83,10 @@ bool AnimationAction::init()
 // ------------------------------------------------------------------------------------------------- 
 
 // 音效與音樂 --------------------------------------------------------------------------------
-	SimpleAudioEngine::getInstance()->playBackgroundMusic("./SR_bg.mp3", true);
+	SimpleAudioEngine::getInstance()->playBackgroundMusic("SR_bg.mp3", true);
+
+	//SimpleAudioEngine::getInstance()->preloadEffect("oo_hno.mp3");
+	//SimpleAudioEngine::getInstance()->preloadEffect("thinking cloud.mp3");
 
 	//SimpleAudioEngine::getInstance()->preloadEffect("./SoHurt.mp3");	// 預先載入音效檔
 	//SimpleAudioEngine::getInstance()->stopBackgroundMusic();	// 停止背景音樂
@@ -160,6 +166,16 @@ bool AnimationAction::init()
 	_countdown[2]->setOpacity(0);
 	this->addChild(_countdown[2]);
 
+	_countdown[3] = Sprite::create("res/go.png");
+	size = _countdown[3]->getContentSize();
+	this->_countdown[3]->setPosition(Vec2(visibleSize.width / 2, visibleSize.height / 2));
+	_countdown[3]->setOpacity(0);
+	this->addChild(_countdown[3]);
+
+	_isstart = false;
+	_isprepare = false;
+	_runCountdown = false;
+	f_countdown = 0;
 	i_countdown = 0;
 //-------------------------------------------------------------------------------------------------
 // Enemy設定 -------------------------------------------------------------------------------------
@@ -179,7 +195,7 @@ bool AnimationAction::init()
 	_enemy[2].setPosition(Point(-200.0f, 300.0f));
 
 	_action = CSLoader::createTimeline("Node1.csb");
-	_action->gotoFrameAndPlay(0, 35, false);
+	//_action->gotoFrameAndPlay(0, 35, false);
 
 	_action->retain();
 
@@ -251,22 +267,27 @@ void AnimationAction::actionFinished()
 	}
 	else
 	{
-		if (i_countdown == 3)
+		if (i_countdown == 4)
 		{
+			_runCountdown = false;
 			_isstart = true;
+			_isprepare = false;
 			_replaybtn.setStatus(CLICKABLE_ON);
 			_exitbtn.setStatus(CLICKABLE_OFF);
 			_jumpbtn.setStatus(CLICKABLE_ON);
 			_startbtn.setStatus(CLICKABLE_OFF);
-			_countdown[0]->setOpacity(0);
-			_countdown[1]->setOpacity(0);
-			_countdown[2]->setOpacity(0);
+			for (int i = 0; i < i_countdown; i++) 
+			    _countdown[i]->setOpacity(0);
 
 			_hpBar->setPercent(100);
 			_hpBarValue->setString(StringUtils::format("HP = %5.2f", 100.0f));
 
 			_score = 0;
 			_scoreValue->setString(StringUtils::format("Score : %5.2f", 0.0f));
+		} 
+		else
+		{
+			_runCountdown = false;
 		}
 	}
 }
@@ -291,7 +312,6 @@ void AnimationAction::doStep(float dt)
 			_action->gotoFrameAndPlay(0, 35, false);
 			_enemy[_enemytype]._enemyRoot->runAction(_action);
 			_enemy[_enemytype]._enemyRoot->runAction(_enemyAction);
-
 			_spawntimer = 0;
 		}
 //-------------------------------------------------------------------------------------
@@ -305,7 +325,7 @@ void AnimationAction::doStep(float dt)
 			enemy_posi = _enemy[_enemytype]._enemyRoot->getPosition();
 			runner_posi = _runnerRuan._runnerRoot->getPosition();
 
-			if (abs(enemy_posi.x - runner_posi.x) < 100)
+			if (abs(enemy_posi.x - runner_posi.x) < 150)
 			{
 				_changefacetimer = 0;
 
@@ -317,7 +337,7 @@ void AnimationAction::doStep(float dt)
 						HP -= 20;
 						_runnerRuan.setFace(FACE_DEPRESSED);
 						_runnerRuan._runnerRoot->runAction(_gethurtSequence);
-						eid_hurt = SimpleAudioEngine::getInstance()->playEffect("./SoHurt.mp3");  // 播放音效檔
+						eid_hurt = SimpleAudioEngine::getInstance()->playEffect("oo_hno.mp3");  // 播放音效檔
 					}
 					else
 					{
@@ -333,7 +353,7 @@ void AnimationAction::doStep(float dt)
 						HP -= 5;
 						_runnerRuan.setFace(FACE_DEPRESSED);
 						_runnerRuan._runnerRoot->runAction(_gethurtSequence);
-						eid_hurt = SimpleAudioEngine::getInstance()->playEffect("./SoHurt.mp3");  // 播放音效檔
+						eid_hurt = SimpleAudioEngine::getInstance()->playEffect("oo_hno.mp3");  // 播放音效檔
 					}
 					else
 					{
@@ -349,7 +369,7 @@ void AnimationAction::doStep(float dt)
 						HP -= 10;
 						_runnerRuan.setFace(FACE_DEPRESSED);
 						_runnerRuan._runnerRoot->runAction(_gethurtSequence);
-						eid_hurt = SimpleAudioEngine::getInstance()->playEffect("./SoHurt.mp3");  // 播放音效檔
+						eid_hurt = SimpleAudioEngine::getInstance()->playEffect("oo_hno.mp3");  // 播放音效檔
 					}
 					else
 					{
@@ -370,7 +390,8 @@ void AnimationAction::doStep(float dt)
 		{
 			HP = 0;
 			_isstart = false;
-			i_countdown = 0;
+			//i_countdown = 0;
+			f_countdown = 0;
 			_replaybtn.setStatus(CLICKABLE_OFF);
 			_exitbtn.setStatus(CLICKABLE_ON);
 			_jumpbtn.setStatus(CLICKABLE_OFF);
@@ -380,35 +401,73 @@ void AnimationAction::doStep(float dt)
 		_hpBar->setPercent(HP);
 		_hpBarValue->setString(StringUtils::format("HP = %5.2f", 1.0f * HP));
 	}
+	else
+	{
+		if (_isprepare)
+		{
+			f_countdown += dt;
+			if (0 < f_countdown && f_countdown < 1)
+			{
+				i_countdown = 0;
+				if (!_runCountdown)
+				{
+					_runCountdown = true;
+					_countdown[i_countdown]->setOpacity(255);
+					_countdown[i_countdown]->runAction(_countdownSequence);
+				}
+			}
+			else if (1 < f_countdown && f_countdown < 2)
+			{
+				i_countdown = 1;
+				if (!_runCountdown)
+				{
+					_runCountdown = true;
+					_countdown[i_countdown]->setOpacity(255);
+					_countdown[i_countdown]->runAction(_countdownSequence);
+				}
+			}
+			else if (2 < f_countdown && f_countdown < 3)
+			{
+				i_countdown = 2;
+				if (!_runCountdown)
+				{
+					_runCountdown = true;
+					_countdown[i_countdown]->setOpacity(255);
+					_countdown[i_countdown]->runAction(_countdownSequence);
+				}
+			}
+			else if (3 < f_countdown && f_countdown < 4)
+			{
+				i_countdown = 3;
+				if (!_runCountdown)
+				{
+					_runCountdown = true;
+					_countdown[i_countdown]->setOpacity(255);
+					_countdown[i_countdown]->runAction(_countdownSequence);
+				}
+			}
+			else
+			{
+				i_countdown = 4;
+			}
+		}
+	}
 }
 
 void AnimationAction::GameStart()
 {
-	if (i_countdown == 0)
-	{
-		ScaleBy * scaleby = ScaleBy::create(0.25f, 2.0f);
-		auto scalebyBack = scaleby->reverse();
+	_isprepare = true;
+	f_countdown = 0;
+	i_countdown = 0;
 
-		FadeOut * fadeout = FadeOut::create(0.5f);
+	ScaleBy * scaleby = ScaleBy::create(0.25f, 2.0f);
+	auto scalebyBack = scaleby->reverse();
 
-		_countdownSequence = Sequence::create(scaleby, scalebyBack, fadeout, _mycallback, NULL);
-		_countdownSequence->retain();
+	FadeOut * fadeout = FadeOut::create(0.5f);
 
-		_countdown[0]->setOpacity(255);
-		_countdown[0]->runAction(_countdownSequence);
-	}
-	else if (i_countdown == 1)
-	{
-		_countdown[i_countdown]->setOpacity(255);
-		_countdown[i_countdown]->runAction(_countdownSequence);
-	}
-	else if (i_countdown == 2)
-	{
-		_countdown[i_countdown]->setOpacity(255);
-		_countdown[i_countdown]->runAction(_countdownSequence);
-	}
-
-	++i_countdown;
+	//_countdownSequence = Sequence::create(scaleby, scalebyBack, fadeout, NULL);
+	_countdownSequence = Sequence::create(scaleby, scalebyBack, fadeout, _mycallback, NULL);
+	_countdownSequence->retain();
 }
 
 bool AnimationAction::onTouchBegan(cocos2d::Touch *pTouch, cocos2d::Event *pEvent)//觸碰開始事件
@@ -482,5 +541,9 @@ void  AnimationAction::onTouchEnded(cocos2d::Touch *pTouch, cocos2d::Event *pEve
 	if (isstart)
 	{
 		GameStart();
+		_replaybtn.setStatus(CLICKABLE_OFF);
+		_exitbtn.setStatus(CLICKABLE_ON);
+		_jumpbtn.setStatus(CLICKABLE_OFF);
+		_startbtn.setStatus(CLICKABLE_OFF);
 	}
 }

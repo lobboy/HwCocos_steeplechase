@@ -25,7 +25,7 @@ private:
 	cocos2d::ui::Text *_hpBarValue;
 	cocos2d::ui::Text *_scoreValue;
 	cocos2d::ui::LoadingBar *_hpBar;
-	cocos2d::Sprite *_countdown[3];
+	cocos2d::Sprite *_countdown[4];
 	//Enemy
 	CEnemy _enemy[3];
 	cocos2d::MoveTo *_enemyAction;
@@ -44,7 +44,10 @@ private:
 	C3SButton _jumpbtn;
 	C3SButton _startbtn;
 	bool _isstart;
+	bool _isprepare;
+	bool _runCountdown;
 	int i_countdown;
+	float f_countdown;
 	cocos2d::Sequence *_countdownSequence;
 
 public:
@@ -58,7 +61,7 @@ public:
 	void GameStart();
 
 	// Action ªº CallBack ¨ç¦¡
-	void AnimationAction::actionFinished();
+	void actionFinished();
 
 	//Ä²¸I
 	cocos2d::EventListenerTouchOneByOne *_listener1;

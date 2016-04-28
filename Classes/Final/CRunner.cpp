@@ -35,6 +35,7 @@ CRunner::~CRunner()
 {
 	if(_action != nullptr) _action->release();
 	if (_jumpAction != nullptr) _jumpAction->release();
+	AnimationCache::destroyInstance();
 }
 
 

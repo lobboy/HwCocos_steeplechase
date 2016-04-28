@@ -25,5 +25,17 @@
         <LastRunType Value="Windows" />
       </Value>
     </Item>
+    <Item Key="TabsParamsKey">
+      <Value ctype="TabsInfo">
+        <OpenedDocuments>
+          <FilePathData Path="AnimationAction.csd" />
+          <FilePathData Path="Node2.csd" />
+          <FilePathData Path="Node1.csd" />
+          <FilePathData Path="Node.csd" />
+          <FilePathData Path="runner01.csd" />
+        </OpenedDocuments>
+        <ActiveDocument Path="AnimationAction.csd" />
+      </Value>
+    </Item>
   </Properties>
 </UserData>

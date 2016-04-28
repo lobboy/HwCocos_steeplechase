@@ -92,6 +92,7 @@
         <Image Name="flame1_08.png" />
         <Image Name="flame2_14.png" />
         <Audio Name="gain point.mp3" />
+        <Image Name="go.png" />
         <Fnt Name="hansans48.fnt" />
         <Image Name="HelloWorld.png" />
         <TTF Name="HKYuanMini.ttf" />
